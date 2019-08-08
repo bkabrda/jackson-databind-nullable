@@ -57,6 +57,8 @@ assertEquals(JsonNullable.<String>undefined(), mapper.readValue("{}", Pet.class)
 
 ```
 
+Note that the `mapper` in the examples above can be either `com.fasterxml.jackson.databind.ObjectMapper` or `com.fasterxml.jackson.dataformat.xml.XmlMapper` - meaning that you can also use `JsonNullable` for XML serialization.
+
 The `ValueExtractor` is registered automatically via Java Service loader mechanism. The example class above will validate as follows
 ```java
 // instantiate javax.validation.Validator
